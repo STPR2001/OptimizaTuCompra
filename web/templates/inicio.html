@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5acb6497d4.js" crossorigin="anonymous"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptimizaTuCompraInicio</title>
+    <link href="static/css/inicio.css" rel="stylesheet" media="screen">
+
+
+</head>
+<body>
+
+<header class="header">
+    <div class="container logo-nav-container">
+
+
+        <nav class="navigation1">
+            <ul style="display: flex">
+                <li class="underlineHover">
+                    <a href="#"><i class="fas fa-home"></i> localidad </a>
+
+                    <ul id="sub_menu">
+                        <li class="underlineHover"><a href="">Artigas</a></li>
+                        <li class="underlineHover"><a href="#">Canelones</a></li>
+                        <li class="underlineHover"><a href="#">Cerro Largo</a></li>
+                        <li class="underlineHover"><a href="#">Colonia</a></li>
+                        <li class="underlineHover"><a href="#">Durazno</a></li>
+                        <li class="underlineHover"><a href="#">Flores</a></li>
+                        <li class="underlineHover"><a href="#">Florida</a></li>
+                        <li class="underlineHover"><a href="#">Lavalleja</a></li>
+                        <li class="underlineHover"><a href="#">Maldonado</a></li>
+                        <li class="underlineHover"><a href="#">Montevideo</a></li>
+                        <li class="underlineHover"><a href="#">Pausandú</a></li>
+                        <li class="underlineHover"><a href="#">Rio Negro</a></li>
+                        <li class="underlineHover"><a href="#">Rivera</a></li>
+                        <li class="underlineHover"><a href="#">Rocha</a></li>
+                        <li class="underlineHover"><a href="#">Salto</a></li>
+                        <li class="underlineHover"><a href="#">San José</a></li>
+                        <li class="underlineHover"><a href="#">Soriano</a></li>
+                        <li class="underlineHover"><a href="#">Tacuarembó</a></li>
+                        <li class="underlineHover"><a href="#">Treinta y Tres</a></li>
+                    </ul>
+
+                </li>
+
+            <nav class="navigation1">
+            <ul style="display: flex">
+                <li class="underlineHover">
+                    <a href="#"><i class="fas fa-align-justify"></i> Categorias
+                    </a>
+                    <ul id="sub_menu2">
+                        <li class="underlineHover"><a href="{{ url_for('comparador') }}">Supermercados</a></li>
+                        <li class="underlineHover"><a href="#">Minimercados</a></li>
+                        <li class="underlineHover"><a href="#">Electrodomésticos</a></li>
+                        <li class="underlineHover"><a href="#">Mueblerías</a></li>
+                        <li class="underlineHover"><a href="#">Ferreterías</a></li>
+                        <li class="underlineHover"><a href="#">Tiendas de Ropa</a></li>
+                        </li>
+                    </ul>
+        </nav>
+
+        <a href="#"><img class="banner" src="static/img/banner3.png"/></a>
+
+        <nav class="navigation">
+            <ul style="display: flex">
+                <li class="underlineHover">
+                    <a href="{{ url_for('login') }}"><i class="fas fa-user"></i> Ingresar
+                    </a>
+                <li/>
+                <ul/>
+                <ul>
+                    <li class="underlineHover">
+                        <a href="{{ url_for('carrito') }}"><i class="fas fa-shopping-cart"></i> Carrito
+                        </a>
+                    </li>
+                </ul>
+        </nav>
+    </div>
+</header>
+<p class="p">🡻 Busca productos en los mercados disponibles para tu localidad 🡻</p>
+<div class="buscador">
+    <script async src="https://cse.google.com/cse.js?cx=86d0c7eaa68c5b16a"></script>
+    <div class="gcse-search"></div>
+    <div/>
+
+
+    <p class="p1"> 🡻 Ejemplo de productos comparables 🡻 </p>
+
+
+    <div class="container">
+        <h3 class="h3"></h3>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="product-grid6">
+                    <div class="product-image6">
+                        <a href="#">
+                            <img class="pic-1"
+                                 src="static/img/img1.jpg">
+                        </a>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Coca Cola 2.25L</a></h3>
+                        <div class="price">$119 - TATA
+                        </div>
+                    </div>
+                    <ul class="social">
+                        <li><a href="" data-tip="Comprar solo esto"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Agregar al carrito"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product-grid6">
+                    <div class="product-image6">
+                        <a href="#">
+                            <img class="pic-1"
+                                 src="static/img/img1.jpg">
+                        </a>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Coca Cola 2.25L</a></h3>
+                        <div class="price">$165 - TIENDA INGLESA
+                        </div>
+                    </div>
+                    <ul class="social">
+                        <li><a href="" data-tip="Comprar solo esto"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Agregar al carrito"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product-grid6">
+                    <div class="product-image6">
+                        <a href="#">
+                            <img class="pic-1"
+                                 src="static/img/img9.jpg">
+                        </a>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Agua mineral 6.25L</a></h3>
+                        <div class="price">$107 - TATA
+                        </div>
+                    </div>
+                    <ul class="social">
+                        <li><a href="" data-tip="Comprar solo esto"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Agregar al carrito"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product-grid6">
+                    <div class="product-image6">
+                        <a href="#">
+                            <img class="pic-1"
+                                 src="static/img/img9.jpg">
+                        </a>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Agua mineral 6.25L</a></h3>
+                        <div class="price">$136 - TIENDA INGLESA
+                        </div>
+                    </div>
+                    <ul class="social">
+                        <li><a href="" data-tip="Comprar solo esto"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Agregar al carrito"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container5">
+
+                <ul class="social_red">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+                <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
+
+            </div>
+            <p>🡹 Nuestras redes sociales 🡹 </p>
+        </footer>
+
+</body>
+</html>

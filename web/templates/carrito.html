@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OptimizaTuCompra/Carrito</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/5acb6497d4.js" crossorigin="anonymous"></script>
+    <link href="static/css/carrito.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<section class="jumbotron text-center">
+    <div class="container1">
+        <h1 class="jumbotron-heading"><a href="{{ url_for('inicio') }}"><img class="banner" src="static/img/banner3.png"/></a></h1>
+    </div>
+</section>
+<div class="container mb-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Disponibilidad</th>
+                        <th scope="col" class="text-center">Cantidad</th>
+                        <th scope="col" class="text-right">Precio</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><img class="img_product" src="static/img/img1.jpg"/></td>
+                        <td>Coca Cola 2.25L</td>
+                        <td>En stock</td>
+                        <td><input class="form-control" type="text" value="1"/></td>
+                        <td class="text-right">$124,90 </td>
+                        <td class="text-right">
+                            <button class="delete"><i class="fas fa-trash-alt"></i></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img class="img_product"  src="static/img/img5.jpg"/></td>
+                        <td>Fideos</td>
+                        <td>En stock</td>
+                        <td><input class="form-control" type="text" value="1"/></td>
+                        <td class="text-right">$33,90 </td>
+                        <td class="text-right">
+                            <button class="delete"><i class="fas fa-trash-alt"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img class="img_product"  src="static/img/img2.jpg"/></td>
+                        <td>Dulce de leche</td>
+                        <td>En stock</td>
+                        <td><input class="form-control" type="text" value="1"/></td>
+                        <td class="text-right">$70,00 </td>
+                        <td class="text-right">
+                            <button class="delete"><i class="fas fa-trash-alt"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Sub-Total</td>
+                        <td class="text-right">$255,90 </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Envío</td>
+                        <td class="text-right">$6,90 </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><strong>Total</strong></td>
+                        <td class="text-right"><strong>$346,90 </strong></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col mb-2">
+            <div class="row">
+                <div class="col-sm-12  col-md-6">
+                    <a href="{{ url_for('inicio') }}"><button class="btn btn-block btn-light asd">Continuar comprando</button></a>
+                </div>
+                <div class="col-sm-12 col-md-6 text-right">
+                    <button class="btn btn-lg btn-block btn-success asd text-uppercase">Confirmar compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

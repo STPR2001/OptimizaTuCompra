@@ -1,0 +1,79 @@
+header{
+    background:#c0392b;
+}
+body{
+    background:#FFD500;
+}
+.banner{
+    width: 35%;
+    position:relative;
+    left:29%;
+    padding:0px;
+
+ }
+ /*BUCADOR*/
+
+
+    .searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    margin:20px;
+    height: 60px;
+    background-color: #FFD500;
+    border-radius: 30px;
+    padding: 10px;
+
+    }
+
+    .search_input{
+    color: #c0392b;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color: #c0392b;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    caret-color:#c0392b;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: #FFD500;
+    color: #c0392b;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:#c0392b;
+    text-decoration:none;
+    }
+
+.icon{
+    font-size:40px;
+    position:relative;
+    top:100%;
+    left:0%;
+    color:#FFD500;
+}
+.icon:hover{
+     color:#FFD500;
+}
+.navigation1 .underlineHover:hover #sub_menu2{
+    display:block;
+    background:#c0392b;
+    overflow: scroll ;
+    width:300px;
+    height:300px
+}
